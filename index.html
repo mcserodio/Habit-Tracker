@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Habit Tracker</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <p>Level <span id="player-level">1</span>!</p>
+        <img id="profile-pic" src="images/killua 90s color.jpg" alt="profile pic" />
+      </div>
+      <h1>Habit Being Tracked: <span id="habit-tracked">...</span>!</h1>
+      <div class="update-stats-container">
+        <div>
+          <input id="habit" placeholder="What is the habit?" />
+          <p id="habitText"></p>
+          <button onclick="habitFunction()">Enter</button>
+        </div>
+        <div>
+          <input id="strpoints" placeholder="How many STR points gain? " />
+          <p id="displaytext"></p>
+          <button onclick="displayText()">Enter</button>
+        </div>
+
+        <div>
+          <input id="defpoints" placeholder="How many DEF points gain? " />
+          <p id="displaytext2"></p>
+          <button onclick="DEFfunction()">Enter</button>
+        </div>
+
+        <div>
+          <input id="wsdpoints" placeholder="How many WSD points gain? " />
+          <p id="displaytext3"></p>
+          <button onclick="WSDfunction()">Enter</button>
+        </div>
+
+        <div>
+          <input id="spdpoints" placeholder="How many SPD points gain? " />
+          <p id="displaytext4"></p>
+          <button onclick="SPDfunction()">Enter</button>
+        </div>
+
+        <div>
+          <input id="level" placeholder="What level are you?" />
+          <p id="displaytext5"></p>
+          <button onclick="LVLfunction()">Enter</button>
+        </div>
+      </div>
+    </main>
+    <section class="player-stats">
+      <div class="str-div">
+        <p>STRENGTH <span id="str-stat">100</span></p>
+        <img id="str-gif" src="https://media.giphy.com/media/1dMNqVx9Kb12EBjFrc/giphy.gif" alt="bugs bunny" />
+      </div>
+      <div class="def-div">
+        <p>DEFENSE <span id="def-stat">100</span></p>
+        <img id="def-gif" src="https://media.giphy.com/media/WDRyxPW1BSpHIDH5Cg/giphy.gif" alt="annie shield" />
+      </div>
+      <div class="wsd-div">
+        <p>WISDOM <span id="wsd-stat">100</span></p>
+        <img id="wsd-gif" src="https://media.giphy.com/media/TcdpZwYDPlWXC/giphy.gif" alt="gandalf" />
+      </div>
+      <div class="spd-div">
+        <p>SPEED <span id="spd-stat">100</span></p>
+        <img id="spd-gif" src="https://media.giphy.com/media/mdfPpglf2c0QxED151/giphy.gif" alt="sonic" />
+      </div>
+    </section>
+  </body>
+</html>
